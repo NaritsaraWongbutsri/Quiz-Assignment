@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\TR\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\Visual Studio 2022\\Quiz-Assigment\\Quiz-Assigment\\Quiz-Assigment.csproj",
+      "projectUniqueName": "C:\\Users\\TR\\Documents\\GitHub\\oop\\Quiz-Assigment\\Quiz-Assigment\\Quiz-Assigment.csproj",
       "projectName": "Quiz-Assigment",
-      "projectPath": "C:\\Users\\Admin\\Documents\\Visual Studio 2022\\Quiz-Assigment\\Quiz-Assigment\\Quiz-Assigment.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\Visual Studio 2022\\Quiz-Assigment\\Quiz-Assigment\\obj\\",
+      "projectPath": "C:\\Users\\TR\\Documents\\GitHub\\oop\\Quiz-Assigment\\Quiz-Assigment\\Quiz-Assigment.csproj",
+      "packagesPath": "C:\\Users\\TR\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TR\\Documents\\GitHub\\oop\\Quiz-Assigment\\Quiz-Assigment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
