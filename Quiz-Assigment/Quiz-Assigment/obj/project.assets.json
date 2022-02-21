@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TR\\Documents\\GitHub\\oop\\Quiz-Assigment\\Quiz-Assigment\\Quiz-Assigment.csproj",
+      "projectUniqueName": "C:\\Users\\TR\\Documents\\GitHub\\Quiz-Assignment\\Quiz-Assigment\\Quiz-Assigment\\Quiz-Assigment.csproj",
       "projectName": "Quiz-Assigment",
-      "projectPath": "C:\\Users\\TR\\Documents\\GitHub\\oop\\Quiz-Assigment\\Quiz-Assigment\\Quiz-Assigment.csproj",
+      "projectPath": "C:\\Users\\TR\\Documents\\GitHub\\Quiz-Assignment\\Quiz-Assigment\\Quiz-Assigment\\Quiz-Assigment.csproj",
       "packagesPath": "C:\\Users\\TR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TR\\Documents\\GitHub\\oop\\Quiz-Assigment\\Quiz-Assigment\\obj\\",
+      "outputPath": "C:\\Users\\TR\\Documents\\GitHub\\Quiz-Assignment\\Quiz-Assigment\\Quiz-Assigment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TR\\AppData\\Roaming\\NuGet\\NuGet.Config",
