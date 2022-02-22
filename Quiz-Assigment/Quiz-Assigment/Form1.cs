@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace Quiz_Assigment
 {
     public partial class Form1 : Form
@@ -5,7 +7,6 @@ namespace Quiz_Assigment
         private int inIn;
         private int inEx;
 
-        public object Encoding { get; private set; }
 
         public Form1()
         {
@@ -25,7 +26,7 @@ namespace Quiz_Assigment
                 int n = dataGridView1.Rows.Add();
                 dataGridView1.Rows[n].Cells[0].Value = textBoxList.Text;
                 dataGridView1.Rows[n].Cells[1].Value = textBoxIncome.Text;
-                dataGridView1.Rows[n].Cells[2].Value = textBoxExpenses.Text;
+                dataGridView1.Rows[n].Cells[2].Value = comboBox1.Text;
 
                 for (int i = 0; i < readAllLine.Length; i++)
                 {
@@ -77,56 +78,18 @@ namespace Quiz_Assigment
             int n = dataGridView1.Rows.Add();
             dataGridView1.Rows[n].Cells[0].Value = textBoxList.Text;
             dataGridView1.Rows[n].Cells[1].Value = textBoxIncome.Text;
-            dataGridView1.Rows[n].Cells[2].Value = textBoxExpenses.Text;
+            dataGridView1.Rows[n].Cells[2].Value = comboBox1.Text;
 
 
-            inIn = Convert.ToInt32(textBoxIncome.Text);
-            inEx = Convert.ToInt32(textBoxExpenses.Text);
+            //inIn = Convert.ToInt32(textBoxIncome.Text);
+            //inEx = Convert.ToInt32(textBoxExpenses.Text);
 
             sumin = inIn + sumin;
             sumex = inEx + sumex;
 
-            textBoxSumIncome.Text = sumin.ToString();
-            textBoxSumExpenses.Text = sumex.ToString();
+            textBox4.Text = sumin.ToString();
+            textBox5.Text = sumex.ToString();
         }
 
-        private void buttonSave_Click(object sender, EventArgs e)
-        {
-            if (dataGridView1.Rows.Count > 0)
-            {
-                SaveFileDialog sfd = new SaveFileDialog();
-                sfd.Filter = "CSV(*.csv)|*.csv";
-                bool fileError = false;
-                if (sfd.ShowDialog() == DialogResult.OK)
-                {
-                    if (!fileError)
-                    {
-                        try
-                        {
-                            int columnCount = dataGridView1.Columns.Count;
-                            string columnNames = "";
-                            string[] outputCSV = new string[dataGridView1.Rows.Count + 1];
-                            for (int i = 0; i < columnCount; i++)
-                            {
-                                columnNames += dataGridView1.Columns[i].HeaderText.ToString() + ",";
-                            }
-                            outputCSV[0] += columnNames;
-                            for (int i = 1; (i - 1) < dataGridView1.Rows.Count; i++)
-                            {
-                                for (int j = 0; j < columnCount; j++)
-                                {
-                                    outputCSV[i] += dataGridView1.Rows[i - 1].Cells[j].Value.ToString() + ",";
-                                }
-                            }
-                            File.WriteAllLines(sfd.FileName, outputCSV, Encoding.UTF8);
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show("Error :" + ex.Message);
-                        }
-                    }
-                }
-            }
-        }
     }
 }  
